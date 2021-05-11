@@ -81,24 +81,26 @@ body {
     margin-top: 30px;
 }
 
-.buttons a {
+.learn {
+    grid-column: 1/13;
     color: #fff;
-    text-decoration: none;
+    background-color: #0a364b;
     text-transform: uppercase;
     font-weight: 900;
     font-size: 1.2rem;
-    padding-top: 12px;
-    padding-bottom: 12px;
-}
-
-.learn {
-    grid-column: 1/13;
-    background-color: #0a364b;
+    margin-top: -10px;
+    margin-bottom: -10px;
 }
 
 .apply {
     grid-column: 1/13;
+    color: #fff;
     background-color: #00783f;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.2rem;
+    margin-top: -10px;
+    margin-bottom: -10px;
 }
 
 @media only screen and (min-width:620px) {
