@@ -30,20 +30,20 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(12, 1fr);
     grid-auto-rows: minmax(80px, auto);
-    column-gap: 0px;
+    column-gap: 20px;
     padding: 20px 40px;
     text-align: center;
 }
 
 .application, .banks, .story, .believe {
-    grid-column: 1/12;
+    grid-column: 1/13;
     text-align: center;
 }
 
 .intro {
-    grid-column: 1/12;
+    grid-column: 1/13;
     text-align: center;
 }
 
@@ -72,51 +72,67 @@ body {
 }
 
 .buttons {
-    grid-column: 1/5;
+    grid-column: 1/13;
     text-align: center;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 20px;
+    row-gap: 10px;
     margin-top: 30px;
 }
 
+.buttons a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.2rem;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
 .learn {
-    grid-column: 1/3;
+    grid-column: 1/13;
     background-color: #0a364b;
 }
 
 .apply {
-    grid-column: 1/3;
+    grid-column: 1/13;
     background-color: #00783f;
 }
 
 @media only screen and (min-width:620px) {
+
+    .buttons a {
+        padding-bottom: 0px;
+    }
 
     .subtitle {
         margin-top: -3.5%;
     }
 
     .application {
-        grid-column: 1/3;
+        grid-column: 1/7;
     }
 
     .banks {
-        grid-column: 3/5;
+        grid-column: 7/13;
     }
 
     .story {
-        grid-column: 1/3;
+        grid-column: 1/7;
     }
 
     .believe {
-        grid-column: 3/5;
+        grid-column: 7/13;
     }
 
     .learn {
-        grid-column: 1/2;
+        grid-column: 3/7;
     }
 
     .apply {
-        grid-column: 2/4;
+        grid-column: 7/11;
     }
 }
 
@@ -126,19 +142,19 @@ body {
     }
 
     .application {
-        grid-column: 1/2;
+        grid-column: 1/4;
     }
 
     .banks {
-        grid-column: 2/3;
+        grid-column: 4/7;
     }
 
     .story {
-        grid-column: 3/4;
+        grid-column: 7/10;
     }
 
     .believe {
-        grid-column: 4/5;
+        grid-column: 10/13;
     }
 }
 
