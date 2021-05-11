@@ -23,6 +23,11 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+.bold {
+    font-weight: 900;
+    color: #00783f;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -39,53 +44,43 @@ body {
     text-align: center;
 }
 
+.application, .banks, .story, .believe {
+    padding: 40px;
+}
+
 .intro h1 {
     text-transform: uppercase;
     font-weight: 300;
 }
 
-.application h2 {
+.title {
     text-transform: uppercase;
     font-weight: 900;
+    color: #00783f;
 }
 
-.application h3 {
+.subtitle {
     text-transform: lowercase;
-    font-weight: 400;
-}
-
-.banks h2 {
-    text-transform: uppercase;
-    font-weight: 900;
-}
-
-.banks h3 {
-    text-transform: lowercase;
-    font-weight: 400;
-}
-
-.story h2 {
-    text-transform: uppercase;
-    font-weight: 900;
-}
-
-.story h3 {
-    text-transform: lowercase;
-    font-weight: 400;
-}
-
-.believe h2 {
-    text-transform: uppercase;
-    font-weight: 900;
-}
-
-.believe h3 {
-    text-transform: lowercase;
+    font-style: italic;
+    margin-top: -6%;
     font-weight: 400;
 }
 
 .buttons {
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(80px, auto);
+}
+
+.learn {
+    grid-column: 1/12;
+    background-color: #0a364b;
+}
+
+.apply {
+    grid-column: 1/12;
+    background-color: #00783f;
 }
 
 @media only screen and (min-width:620px) {
